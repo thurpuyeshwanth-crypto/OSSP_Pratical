@@ -11,6 +11,10 @@ Operating Systems and Systems Programming practical programs, organized by sessi
 | 3 | Observe parent and child PIDs and process states |
 | 4 | Compare `wait()` and `waitpid()`; inspect and reap a zombie |
 | 5 | Anonymous pipes, producer-consumer communication, and a two-command pipeline |
+| 6 | Client–Server communication using Named Pipes (FIFOs); POSIX signal handling |
+| 7 | Linux process address space inspection via `/proc` and `pmap` |
+| 8 | Dynamic memory allocation, Valgrind leak checking, and Copy-on-Write (`fork()`) |
+| 9 | Low-level syscalls vs buffered file I/O; `dup2()` standard stream redirection |
 
 ## Source code
 
