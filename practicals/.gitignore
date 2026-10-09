@@ -23,3 +23,13 @@
 /src/sample.txt
 /src/output_low.dat
 /src/output_stdio.dat
+/src/mmap_file
+/src/read_write_file
+/src/data.txt
+/src/original.txt
+/src/hardlink.txt
+/src/symlink.txt
+/src/bench_data.dat
+/src/race_counter
+/src/safe_counter
+/src/mutex_counter

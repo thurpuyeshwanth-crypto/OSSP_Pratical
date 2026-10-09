@@ -13,5 +13,7 @@ Operating Systems and Systems Programming practical programs, organized by sessi
 | 7 | Included | Process address space inspection via `/proc/<PID>/maps`, `status`, and `pmap` |
 | 8 | Included | Dynamic memory allocation, Valgrind leak checking, and Copy-on-Write (`fork()`) |
 | 9 | Included | Low-level vs stdio file copying; standard I/O redirection with `dup2()` |
+| 10 | Included | Inodes, hard links, symbolic links; memory-mapped I/O (`mmap()`) vs `read()`/`write()` |
+| 11 | Included | POSIX threads (`pthreads`), race condition demonstration, and mutex synchronization |
 
 Build the programs with `cd src && make`. See the session notes in `docs/` for run commands, explanations, and observations. Generated executables and temporary sample files are excluded from the repository.

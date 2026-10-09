@@ -3,7 +3,9 @@ CFLAGS = -Wall -Wextra -g -std=c11 -D_POSIX_C_SOURCE=200809L
 PROGRAMS = prog1 prog2 prog3 wait_waitpid_demo zombie_process prog5 ls_grep_pipe \
            prog6_fifo_server prog6_fifo_client signal_handler \
            memory_layout memory_demo dynamic_memory cow_demo \
-           copy_lowlevel copy_stdio redirect_output redirect_input
+           copy_lowlevel copy_stdio redirect_output redirect_input \
+           mmap_file read_write_file \
+           race_counter safe_counter mutex_counter
 
 .PHONY: all clean
 all: $(PROGRAMS)
@@ -48,6 +50,16 @@ redirect_output: redirect_output.c
 	$(CC) $(CFLAGS) $< -o $@
 redirect_input: redirect_input.c
 	$(CC) $(CFLAGS) $< -o $@
+mmap_file: mmap_file.c
+	$(CC) $(CFLAGS) $< -o $@
+read_write_file: read_write_file.c
+	$(CC) $(CFLAGS) $< -o $@
+race_counter: race_counter.c
+	$(CC) $(CFLAGS) -pthread $< -o $@
+safe_counter: safe_counter.c
+	$(CC) $(CFLAGS) -pthread $< -o $@
+mutex_counter: mutex_counter.c
+	$(CC) $(CFLAGS) -pthread $< -o $@
 
 clean:
-	rm -f $(PROGRAMS) fifo_server fifo_client output.txt input.txt output_low.dat output_stdio.dat
+	rm -f $(PROGRAMS) fifo_server fifo_client output.txt input.txt output_low.dat output_stdio.dat data.txt

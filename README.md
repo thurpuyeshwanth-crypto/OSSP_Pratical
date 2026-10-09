@@ -15,6 +15,8 @@ Operating Systems and Systems Programming practical programs, organized by sessi
 | 7 | Linux process address space inspection via `/proc` and `pmap` |
 | 8 | Dynamic memory allocation, Valgrind leak checking, and Copy-on-Write (`fork()`) |
 | 9 | Low-level syscalls vs buffered file I/O; `dup2()` standard stream redirection |
+| 10 | Inodes, hard links, symbolic links; memory-mapped I/O (`mmap()`) vs `read()`/`write()` |
+| 11 | POSIX threads (`pthreads`), race condition demonstration, and mutex synchronization |
 
 ## Source code
 
